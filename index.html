@@ -14,54 +14,59 @@
     
         <nav>
             
-            <div>
-                <span class="hero-logo">Header Logo</span>
+            <div class="hero-logo">
+                <span>Header Logo</span>
             </div>
             
             <ul class="hero-nav-link">
-                <li><a href="#">header link one</a></li>
-                <li><a href="#">header link two</a></li>
-                <li><a href="#">header link three</a></li>
+                <li><a href="#">
+                    <svg width="25" height="25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4.75a3.25 3.25 0 1 0 0 6.5 3.25 3.25 0 1 0 0-6.5z"></path>
+                        <path d="M6.848 19.25h10.305c1.141 0 2.021-.982 1.488-1.992C17.856 15.773 16.068 14 12 14s-5.856 1.773-6.64 3.258c-.534 1.01.346 1.992 1.487 1.992Z"></path>
+                    </svg>
+                    Login | Sign up
+                </a></li>
+                <li><a href="#">
+                    <svg width="25" height="25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.75 7.75a2 2 0 0 1 2-2h10.5a2 2 0 0 1 2 2v8.5a2 2 0 0 1-2 2H6.75a2 2 0 0 1-2-2v-8.5Z"></path>
+                        <path d="m5.5 6.5 6.5 5.75 6.5-5.75"></path>
+                      </svg>
+                      Contact
+                </a></li>
             </ul>
         </nav>
-
-        <div class="hero-div">
-
-            <div class="hero-main-div">
-                
-                <h1>This website is awesome</h1>
-
-                <p>
-                    This website has some subtext that goes here under
-                    the main title. It's a smaller font and the color is lower
-                    contrast
-                </p>
-
-                <button class="hero-btn">
-                    Sign Up
-                </button>
-
-            </div>
-
-            <div class="hero-video">
-                <video autoplay loop>
-                    <source src="../landing-page/resources/videos/pexels-beach.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-
-        </div>
-
     </header>
 
-    <!-- Some random information section -->
-    <section class="random-section">
+    <section class="hero-section">
+        <div class="hero-video-container">
+          <video autoplay muted loop id="hero-video">
+            <source src="../landing-page/resources/videos/pexels-beach.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+      
+        <div class="hero-content">
+          <div class="hero-main-div">
+            <h1>This website is awesome</h1>
+            <p>
+              This website has some subtext that goes here under
+              the main title. It's a smaller font and the color is lower
+              contrast
+            </p>
+            <button class="hero-btn">Sign Up</button>
+          </div>
+        </div>
+      </section>
+      
 
-        <div class="random-section-header">
+    <!-- amenities information section -->
+    <section class="amenities-section">
+
+        <div class="amenities-section-header">
             <h1>Some Random Information</h1>
         </div>
 
-        <div class="random-section-images">
+        <div class="amenities-section-images">
             
             <figure>
                 <img src="/landing-page/resources/images/pexels-dining1.jpg" alt="dining area">
