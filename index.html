@@ -1,66 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>The Odin Project: Landing Page - Hotel</title>
-        <link rel="stylesheet" href="/landing-page/resources/styles/style.css">
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Odin Project: Landing Page - Hotel</title>
+  <link rel="stylesheet" href="/landing-page/resources/styles/style.css">
+</head>
 
-    <body>
+<body>
 
-        <!-- header and nav -->
-        <header>
+  <!-- header and nav -->
+  <header>
 
-            <nav>
+    <nav>
 
-                <div class="hero-logo">
-                    <span>Header Logo</span>
-                </div>
+      <div class="hero-logo">
+        <span>Header Logo</span>
+      </div>
 
-                <ul class="hero-nav-link">
-                    <li><a href="#">
-                            <svg width="25" height="25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 4.75a3.25 3.25 0 1 0 0 6.5 3.25 3.25 0 1 0 0-6.5z"></path>
-                                <path d="M6.848 19.25h10.305c1.141 0 2.021-.982 1.488-1.992C17.856 15.773 16.068 14 12 14s-5.856 1.773-6.64 3.258c-.534 1.01.346 1.992 1.487 1.992Z"></path>
-                            </svg>
-                            Login | Sign up
-                        </a></li>
-                    <li><a href="#">
-                            <svg width="25" height="25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4.75 7.75a2 2 0 0 1 2-2h10.5a2 2 0 0 1 2 2v8.5a2 2 0 0 1-2 2H6.75a2 2 0 0 1-2-2v-8.5Z"></path>
-                                <path d="m5.5 6.5 6.5 5.75 6.5-5.75"></path>
-                            </svg>
-                            Contact
-                        </a></li>
-                </ul>
-            </nav>
-        </header>
+      <ul class="hero-nav-link">
+        <li><a href="#">
+            <svg width="25" height="25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 4.75a3.25 3.25 0 1 0 0 6.5 3.25 3.25 0 1 0 0-6.5z"></path>
+              <path d="M6.848 19.25h10.305c1.141 0 2.021-.982 1.488-1.992C17.856 15.773 16.068 14 12 14s-5.856 1.773-6.64 3.258c-.534 1.01.346 1.992 1.487 1.992Z"></path>
+            </svg>
+            Login | Sign up
+          </a></li>
+        <li><a href="#">
+            <svg width="25" height="25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.75 7.75a2 2 0 0 1 2-2h10.5a2 2 0 0 1 2 2v8.5a2 2 0 0 1-2 2H6.75a2 2 0 0 1-2-2v-8.5Z"></path>
+              <path d="m5.5 6.5 6.5 5.75 6.5-5.75"></path>
+            </svg>
+            Contact
+          </a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <section class="hero-section">
-            <div class="hero-video-container">
-                <video autoplay muted loop id="hero-video">
-                    <source src="../landing-page/resources/videos/pexels-beach.mp4" type="video/mp4">
-                    Your browser does not support HTML5 video.
-                </video>
-            </div>
+  <section class="hero-section">
+    <div class="hero-main-div">
+      <h1>This website is awesome</h1>
+      <p>
+        This website has some subtext that goes here under the main title. It's a smaller font and the color is lower
+        contrast
+      </p>
+      <button class="hero-btn">Sign Up</button>
+    </div>
 
-            <div class="hero-content">
-                <div class="hero-main-div">
-                    <h1>This website is awesome</h1>
-                    <p>
-                        This website has some subtext that goes here under
-                        the main title. It's a smaller font and the color is lower
-                        contrast
-                    </p>
-                    <button class="hero-btn">Sign Up</button>
-                </div>
-            </div>
-        </section>
-
-
+    <video class="hero-video-container" autoplay muted loop>
+      <source src="/landing-page/resources/videos/pexels-beach.mp4" type="video/mp4">
+    </video>
+  </section>
+    
         <!-- amenities information section -->
         <section class="amenities-section">
 
@@ -101,14 +94,27 @@
 
         </section>
 
-        <!-- Quote Section -->
+        <!-- Customer Quote Section -->
         <section class="quote-section">
             <p>
-                I had an amazing stay at this hotel and would highly recommend it. The rooms are
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m12 18.38-6.173 3.245 1.179-6.874L2.01 9.883 8.912 8.88 12 2.625l3.087 6.255 6.902 1.003-4.995 4.868 1.18 6.874L12 18.38Z"></path>
+                  </svg><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m12 18.38-6.173 3.245 1.179-6.874L2.01 9.883 8.912 8.88 12 2.625l3.087 6.255 6.902 1.003-4.995 4.868 1.18 6.874L12 18.38Z"></path>
+                  </svg><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m12 18.38-6.173 3.245 1.179-6.874L2.01 9.883 8.912 8.88 12 2.625l3.087 6.255 6.902 1.003-4.995 4.868 1.18 6.874L12 18.38Z"></path>
+                  </svg><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m12 18.38-6.173 3.245 1.179-6.874L2.01 9.883 8.912 8.88 12 2.625l3.087 6.255 6.902 1.003-4.995 4.868 1.18 6.874L12 18.38Z"></path>
+                  </svg><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m12 16.056 3.517 1.85-.672-3.916 2.846-2.774-3.932-.571-1.76-3.563-1.758 3.563-3.932.57 2.846 2.774-.672 3.916L12 16.056Zm0 2.26-6.173 3.247 1.179-6.875L2.01 9.819l6.902-1.003L12 2.563l3.087 6.255 6.902 1.002-4.995 4.868 1.18 6.876L12 18.317Z"></path>
+                  </svg>
+            </p>
+            <p>
+                "I had an amazing stay at this hotel and would highly recommend it. The rooms are
                 luxurious and beautifully designed. The fine dining options are excellent and the
                 restaurant offers a wonderful array of dishes. The beach sitting areas are
                 stunning and the hotel has gone to great lengths to ensure guests' comfort.
-                The pool is equally impressive and offers a refreshing escape.
+                The pool is equally impressive and offers a refreshing escape." @username 
             </p>
         </section>
 
@@ -152,4 +158,4 @@
         </footer>
     </body>
 
-</html
+</html>
