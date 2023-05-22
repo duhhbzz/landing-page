@@ -1,0 +1,186 @@
+header {
+    background-color: #1F2937;
+    padding: 10px 20px;
+}
+
+/* Nav bar */
+.nav {
+    background-color: #1F2937;
+    padding: 10px 20px;
+}
+  
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.nav-left {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #F9FAF8;
+}
+  
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+  
+.nav-link {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ 
+.nav-link li {
+    margin-left: 10px;
+}
+  
+.nav-link li a {
+    color: #F9FAF8;
+    text-decoration: none;
+}
+/* end nav bar */
+
+/* Start Hero Section */
+.hero-section {
+    position: relative;
+}
+  
+.hero-main-div {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    color: #000;
+}
+  
+.hero-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-main-div h1 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.hero-main-div p {
+    font-size: 18px;
+}
+
+.hero-btn {
+    background-color: #3882F6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* End Hero Section */
+
+/* Amenities Section */
+.amenities-section {
+    text-align: center;
+  }
+  
+  .amenities-section-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .amenities-section-images figure {
+    margin: 10px;
+    flex: 1 0 200px; /* Adjust the width as needed */
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .amenities-section-images img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .amenities-section-images figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+/* End Amenities Section */
+
+/* Customer Quote Section */
+.quote-section {
+    background-color: #E5E7EB;
+    padding-top: 3px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 3px;
+}
+  
+.quote-section .quote-text {
+    font-size: 36px;
+    font-style: italic;
+    color: #F2937;
+}
+/* End Customer Quote Section */
+
+/* Call to Action */
+.reservation-section {
+    background-color: #3882F6;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+  
+.reservation-section strong,
+.reservation-section p {
+    color: #fff;
+    margin: 0;
+}
+  
+.reservation-btn {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+  
+.reservation-btn:hover {
+    background-color: #fff;
+    color: #3882F6;
+}
+/* End of Call to Action */
+
+/* Footer */
+footer {
+    display: flex;
+    background-color: #1F2937;
+    color: #fff;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+  
+.footer-text a {
+    color: #fff;
+    text-decoration: none;
+}
+  
+.footer-text a:hover {
+    text-decoration: underline;
+}
+/* End of Footer */
