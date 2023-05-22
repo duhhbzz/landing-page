@@ -127,7 +127,7 @@ header {
 .quote-section .quote-text {
     font-size: 36px;
     font-style: italic;
-    color: #F2937;
+    color: #000;
 }
 /* End Customer Quote Section */
 
@@ -156,7 +156,7 @@ header {
     background-color: transparent;
     color: #fff;
     border: 2px solid #fff;
-    border-radius: 30px;
+    border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
 }
