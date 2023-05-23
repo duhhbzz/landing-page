@@ -11,27 +11,33 @@
 
 <body>
 
-  <!-- header and nav -->
-  <header>
-    <nav>
-        <div class="nav-container">
-          <div class="nav-left">
-            <span class="hotel-name">The Odin Beach Hotel</span>
-          </div>
-          <div class="nav-right">
-            <ul class="nav-link">
-              <li><a href="#">
-                <svg width="25" height="25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4.75 7.75a2 2 0 0 1 2-2h10.5a2 2 0 0 1 2 2v8.5a2 2 0 0 1-2 2H6.75a2 2 0 0 1-2-2v-8.5Z"></path>
-                  <path d="m5.5 6.5 6.5 5.75 6.5-5.75"></path>
-                </svg>
-                Contact
-              </a></li>
-            </ul>
-          </div>
+<!-- header and nav -->
+<header>
+  <nav>
+    <div class="nav-container">
+      <div class="nav-left">
+        <span class="hotel-name">The Odin Beach Hotel</span>
+      </div>
+      <div class="nav-right">
+        <div class="hamburger-menu">
+          <svg class="hamburger" width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 12h18"></path>
+            <path d="M3 6h18"></path>
+            <path d="M3 18h18"></path>
+          </svg>
+        </div>          
+        <div class="nav-links">
+          <a href="#">Home</a><br>
+          <a href="#">Amenities</a><br>
+          <a href="#">Book Now</a><br>
+          <a href="#">Contact</a><br>
+          <a href="#" class="close-button">Close</a>
         </div>
-      </nav>
-  </header>
+      </div>
+    </div>
+  </nav>
+</header>
+
 
   <section class="hero-section">
     <div class="hero-main-div">
@@ -40,7 +46,7 @@
         This website has some subtext that goes here under the main title. It's a smaller font and the color is lower
         contrast
       </p>
-      <button class="hero-btn">Sign Up</button>
+      <button class="hero-btn">Book Now</button>
     </div>
 
     <video class="hero-video-container" autoplay muted loop>
@@ -51,41 +57,45 @@
     <!-- amenities information section -->
     <section class="amenities-section">
 
-        <div class="amenities-section-header">
+          <div class="amenities-section-header">
             <h1>Our Amenities</h1>
-        </div>
-
-        <div class="amenities-section-images">
-
+          </div>
+        
+          <div class="amenities-section-images">
+        
             <figure>
-                <img src="/landing-page/resources/images/pexels-dining1.jpg" alt="dining area">
-                <figcaption>Experience delicious fine dining.</figcaption>
+              <h5>Dining</h5>
+              <img src="/landing-page/resources/images/pexels-dining1.jpg" alt="dining area">
+              <figcaption>Experience delicious fine dining.</figcaption>
             </figure>
-
+        
             <figure>
-                <img src="/landing-page/resources/images/pexels-outside1.jpg" alt="dining area">
-                <figcaption>
-                    Lay on the beach and witness a view to remember.
-                </figcaption>
+              <h5>Beach</h5>
+              <img src="/landing-page/resources/images/pexels-outside1.jpg" alt="beach area">
+              <figcaption>
+                Enjoy the view on the beach.
+              </figcaption>
             </figure>
-
+        
             <figure>
-                <img src="/landing-page/resources/images/pexels-pool1.jpg" alt="dining area">
-                <figcaption>
-                    Take a dip in the pool and bask in the sun.
-                </figcaption>
+              <h5>Pool</h5>
+              <img src="/landing-page/resources/images/pexels-pool1.jpg" alt="pool area">
+              <figcaption>
+                Take a dip in the pool and bask in the sun.
+              </figcaption>
             </figure>
-
+        
             <figure>
-                <img src="/landing-page/resources/images/pexels-room1.jpg" alt="dining area">
-                <figcaption>
-                    Enjoy your vacation and rest in our comfortable
-                    beds.
-                </figcaption>
+              <h5>Rooms</h5>
+              <img src="/landing-page/resources/images/pexels-room1.jpg" alt="hotel room">
+              <figcaption>
+                Relax in our modern rooms.
+              </figcaption>
             </figure>
-
-        </div>
-    </section>
+        
+          </div>
+        </section>
+        
 
     <!-- Customer Quote Section -->
     <section class="quote-section">
@@ -124,7 +134,7 @@
             </p>
         </div>
         <div class="reservation-right">
-            <button class="reservation-btn">Sign up</button>
+            <button class="reservation-btn">Book Now</button>
         </div>
     </section>
 
@@ -141,6 +151,7 @@
                 </a>
             </span>
         </footer>
+        <script src="/landing-page/resources/scripts/script.js"></script>
     </body>
 
 </html>

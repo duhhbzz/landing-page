@@ -7,41 +7,95 @@ header {
 .nav {
     background-color: #1F2937;
     padding: 10px 20px;
-}
+  }
   
-.nav-container {
+  .nav-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
+  }
   
-.nav-left {
+  .nav-left {
     display: flex;
     align-items: center;
     font-size: 24px;
     color: #F9FAF8;
-}
+  }
   
-.nav-right {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Off-screen initially */
+    width: 250px;
+    height: 100%;
+    background-color: #FFF;
+    transition: right 0.3s ease-in-out;
+    z-index: 100;
+  }
+  
+  .nav-links.show {
+    right: 0; /* Display the menu from the right side */
+  }
+  
+  /* Update the media query for smaller screens to show the navigation links */
+  @media screen and (max-width: 768px) {
+    .nav-right {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .nav-links ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+    
+      .nav-links ul li a {
+        margin-top: 10px;
+        text-decoration: none;
+        color: #F9FAF8;
+      }
+  }
+  
+  .hamburger-menu {
     display: flex;
-    align-items: center;
-}
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    padding: 10px;
+    color: #F9FAF8;
+  }
   
-.nav-link {
-    list-style: none;
+  .hamburger {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
-}
- 
-.nav-link li {
-    margin-left: 10px;
-}
+    background-color: transparent;
+    border: none;
+    fill: #F9FAF8;
+  }
   
-.nav-link li a {
-    color: #F9FAF8;
-    text-decoration: none;
-}
-/* end nav bar */
+  .hamburger:before,
+  .hamburger:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #F9FAF8;
+  }
+
+  .nav-links ul li a:hover {
+    text-decoration: underline;
+  }
 
 /* Start Hero Section */
 .hero-section {
@@ -85,8 +139,16 @@ header {
 /* End Hero Section */
 
 /* Amenities Section */
+figcaption {
+    font-style: italic;
+}
+
 .amenities-section {
     text-align: center;
+    border: solid 1px;
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
   
   .amenities-section-images {
@@ -98,18 +160,19 @@ header {
   
   .amenities-section-images figure {
     margin: 10px;
-    flex: 1 0 200px; /* Adjust the width as needed */
+    flex: 1 0 200px;
     border-radius: 10px;
     overflow: hidden;
   }
   
   .amenities-section-images img {
     width: 100%;
-    height: auto;
+    height: 200px;
+    border-radius: 10px;
   }
   
   .amenities-section-images figcaption {
-    margin-top: 10px;
+    margin-top: 2px;
     font-size: 14px;
     text-align: center;
   }
